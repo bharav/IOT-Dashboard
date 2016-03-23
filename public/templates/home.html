@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1></h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-map-marker fa-fw"></i>Current Fleet Status
+            </div>
+            <div class="panel-body">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="truck in trucks">
+                    <td class="armada-devider">
+                        <div class="armada">
+                            <span style="background:#65C3DF">
+                                                            <span class="maki-bus"></span>&nbsp;&nbsp;{{truck.TruckDetail}}</span>
+                            <p>
+                                <span class="entypo-gauge"></span>&nbsp;{{truck.speed}} Km/<i>Hours</i>
+                            </p>
+                        </div>
+                    </td>
+                    <td class="driver-devider">
+                        <img class="armada-pic img-circle" alt="" ng-src="{{truck.pic}}">
+                        <h3>{{truck.drivername}}</h3>
+                        <br>
+                        <p>Driver</p>
+                    </td>
+                    <td class="progress-devider">
+                        <section id="basic">
+                            <article>
+
+                                <div class="number-pb">
+                                    <div class="number-pb-shown" style="width: 77.1429%; overflow: visible; box-sizing: border-box; min-width: 0px; max-width: none; height: 11px; min-height: 0px; max-height: none; padding-left: 0px;"></div>
+                                    <div class="number-pb-num" style="left: 77.1429%; overflow: visible; box-sizing: border-box; width: 24.875px; min-width: 20px; max-width: none; height: 18px; min-height: 0px; max-height: none; padding-left: 5px;">75</div>
+                                </div>
+                            </article>
+                        </section>
+                        <span class="label custombkg pull-left">{{truck.start}}</span>
+                        <span class="label custombkg pull-right">{{truck.end}}</span>
+                    </td>
+                </tr>
+                </tr>
+            </tbody>
+    </div>

@@ -1,0 +1,80 @@
+﻿#map {
+    height:520px;
+    width:100%;
+}
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+h2 {
+    margin-bottom:0;
+    margin-top: 0;
+}
+
+
+.truck-item:hover{
+    background-color: #448bc8;
+    border-color: #448bc8;
+    cursor: pointer;
+} 
+.armada > span {
+    background: none repeat scroll 0 0 #ddd;
+    border-radius: 0 10px 10px 0;
+    color: #FFFFFF;
+    left: -5px;
+    padding: 1px 10px;
+    position: relative;
+    text-transform: uppercase;
+    top: -5px;
+}
+.armada > p {
+    font-weight: bold;
+}
+.armada i {
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+.armada-devider {
+    border-right: 1px dashed #DDDDDD;
+    width: 23%;
+    padding-top: 20px !important;
+}
+.driver-devider {
+    width: 40%;
+    padding-top: 15px !important;
+}
+.driver-devider > h3 {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+.driver-devider > p {
+    float: left;
+    left: -20px;
+    margin: 0 0 0 20px;
+    position: relative;
+}
+.armada-pic {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    float: left;
+    margin-right: 19px;
+    margin-top: -5px;
+    width: 52px;
+}
+.progress-devider span {
+    margin-top: 0;
+}
+.progress-bar-plane {
+    background-color: #AB6DB0;
+}
+/* maki */
+[class*="maki-"]:before {
+    font-family:'maki', sans-serif;
+}
+.custombkg{
+    background-color: #A8BDCF!important;
+}
